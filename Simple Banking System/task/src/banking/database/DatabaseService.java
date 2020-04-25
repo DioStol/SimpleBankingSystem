@@ -24,7 +24,7 @@ public class DatabaseService {
     }
 
     void createNewTable(String databaseName) {
-        String url = "jdbc:sqlite:" + ROOT + "/" + databaseName;
+        String url = SQLITE_DRIVER + ROOT + "/" + databaseName;
         String sql = "CREATE TABLE card (\n"
                 + "	id INTEGER PRIMARY KEY,\n"
                 + "	number TEXT NOT NULL,\n"
